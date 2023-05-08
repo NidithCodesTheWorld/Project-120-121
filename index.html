@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Lens vs MobileNet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<center>
+
+<h2 class="btn btn-danger heading">Case Study between Google Lens vs MobileNet</h2>
+
+<br><br>
+
+<p id="googleLens">Google Lens</p>
+<img style="margin-left: 20px;" width="100" height="100" src="googleLens.png">
+
+<h2>VS...</h2>
+
+<h1 style="font-size: 40px; width:50%; height: 60px" class="btn btn-primary">MobileNet Model</h1>
+
+<br><br>
+
+<ol>
+
+<!--First Item Start-->
+
+<div class="testImageAndResultEarth col-xs-12">
+
+<li class="col-sm-4 col-xs-12">
+
+<b>Test Image : </b>
+<img src="Earth.jpeg" id="earthImg" class="img-responsive">
+
+</li>
+
+<h5 class="col-sm-4 col-xs-12">
+Output on <b>Google Lens : </b>
+<span><b>Planet Earth</b></span>
+</h5>
+
+<h5 class="col-sm-4 col-xs-12">
+  Output on <b>MobileNet Model : </b>
+  <span>Crash Helmet</span>
+</h5>
+
+<div class="resultEarth" class="col-xs-12">
+
+<h4>Result - </h4>
+<hr>
+<h4>Google Lens is more accurate!</h4>
+
+</div>
+</div>
+
+<!--First Item End-->
+
+<br><br><br>
+
+<!--Second Item Start-->
+
+<div class="testImageAndResultBallPen col-xs-12">
+
+	<li class="col-sm-4 col-xs-12">
+	
+	<b>Test Image : </b>
+	<img src="Roller ball pen.jpeg" id="ballPenImg" class="img-responsive">
+	
+	</li>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	Output on <b>Google Lens : </b>
+	<span><b>Roller Ball Pen</b></span>
+	</h5>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	  Output on <b>MobileNet Model : </b>
+	  <span>Ballpoint Pen</span>
+	</h5>
+	
+	<div class="resultBallPen" class="col-xs-12">
+	
+	<h4>Result - </h4>
+	<hr>
+	<h4>Both of them are accurate!!</h4>
+	
+	</div>
+	</div>
+
+<!--Second Item End-->
+
+<br><br><br>
+
+<!--Third Item Start-->
+
+<div class="testImageAndResultRemote col-xs-12">
+
+	<li class="col-sm-4 col-xs-12">
+	
+	<b>Test Image : </b>
+	<img src="Remote.jpeg" id="remoteImg" class="img-responsive">
+	
+	</li>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	Output on <b>Google Lens : </b>
+	<span><b>Air Conditioner Remote</b></span>
+	</h5>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	  Output on <b>MobileNet Model : </b>
+	  <span>Remote Control, Remote</span>
+	</h5>
+	
+	<div class="resultRemote" class="col-xs-12">
+	
+	<h4>Result - </h4>
+	<hr>
+	<h4>Both of them are accurate!!</h4>
+	
+	</div>
+	</div>
+
+<!--Third Item End-->
+
+<br><br><br>
+
+<!--Fourth Item Start-->
+
+<div class="testImageAndResultPowerBank col-xs-12">
+
+	<li class="col-sm-4 col-xs-12">
+	
+	<b>Test Image : </b>
+	<img src="Power bank.jpeg" id="powerBankImg" class="img-responsive">
+	
+	</li>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	Output on <b>Google Lens : </b>
+	<span><b>Power Bank</b></span>
+	</h5>
+	
+	<h5 class="col-sm-4 col-xs-12">
+	  Output on <b>MobileNet Model : </b>
+	  <span>Shower Curtain</span>
+	</h5>
+	
+	<div class="resultPowerBank" class="col-xs-12">
+	
+	<h4>Result - </h4>
+	<hr>
+	<h4>Google Lens is more accurate!</h4>
+	
+	</div>
+	</div>
+
+<!--Fourth Item End-->
+
+	<br><br><br>
+
+<!--Fifth Item Start-->
+
+	<div class="testImageAndResultCoin col-xs-12">
+
+		<li class="col-sm-4 col-xs-12">
+		
+		<b>Test Image : </b>
+		<img src="Coin.jpeg" id="coinImg" class="img-responsive">
+		
+		</li>
+		
+		<h5 class="col-sm-4 col-xs-12">
+		Output on <b>Google Lens : </b>
+		<span><b>Rupee Coin</b></span>
+		</h5>
+		
+		<h5 class="col-sm-4 col-xs-12">
+		  Output on <b>MobileNet Model : </b>
+		  <span>Mouse, Computer Mouse</span>
+		</h5>
+		
+		<div class="resultCoin" class="col-xs-12">
+		
+		<h4>Result - </h4>
+		<hr>
+		<h4>Google Lens is more accurate!</h4>
+		
+		</div>
+		</div>
+		<!--Fifth Item end-->
+
+</ol>
+
+<br><br><br>
+
+<p style="margin:50px; font-size: 25px;">As you can see, I've checked the accuracy of both
+<b>Google lens and MobileNet Model</b> with pictures of things. After some calculations...
+So, I can say that R-Kart Company can use <b>Google Lens</b>
+</p>
+
+<div class="copy_right_footer">
+
+<h3>Made By : Nidith Pokala</h3>
+
+</div>
+
+</center>
+
+</body>
+</html>

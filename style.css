@@ -1,0 +1,86 @@
+body{
+
+background-color: grey;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: white;
+
+}
+
+.heading{
+
+font-size: 30px;
+width: 80%;
+
+}
+
+#googleLens{
+
+    display: inline-block;
+    color:red;
+    font-size: 25px;
+
+}
+
+.endDivTag, .testImageAndResultEarth, .testImageAndResultBallPen, .testImageAndResultRemote, .testImageAndResultPowerBank, .testImageAndResultCoin{
+
+background-color: peachpuff;
+color: black;
+border: 2px solid black;
+border-radius: 25px;
+margin-top: 20px;
+font-size: 25px;
+
+}
+
+#earthImg{
+
+    border-radius: 20px;
+    margin: 10px;
+
+}
+
+#ballPenImg{
+
+width: 650px;
+height: 100px;
+margin: 10px;
+border-radius: 20px;
+
+}
+
+#remoteImg{
+
+width: 200px;
+height: 300px;
+border-radius: 20px;
+margin: 10px;
+
+}
+
+#powerBankImg{
+
+height: 300px;
+border-radius: 20px;
+margin: 10px;
+
+
+}
+
+#coinImg{
+
+margin: 10px;
+
+}
+
+.copy_right_footer{
+
+color: red;
+position: fixed;
+bottom: 0;
+text-align: center;
+width: 100%;
+background: white;
+font-family:'Roboto Slab', serif;
+
+
+}
